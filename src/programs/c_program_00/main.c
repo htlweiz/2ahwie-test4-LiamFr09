@@ -20,17 +20,20 @@ int main(int argc, char **argv)
 {
   printf("This program was called with %d arguments.\n", argc);
   printf("Hello World!\n");
+  printf("\n");
 
   int zahl = 0;
   printf("Geben Sie eine ganze Zahl ein: ");
   scanf("%d", &zahl);
-  printf("Die eingegebene Zahl ist: %d (1 ... ungerade wurde übergeben, 2 ... gerade wurde übergeben, 0 ... die Zahl 0 wurde übergeben)\n", int_even_odd(zahl));
+  printf("Die Zahl %d ist: %d \n1 ... ungerade wurde übergeben \n2 ... gerade wurde übergeben \n0 ... die Zahl 0 wurde übergeben\n", zahl, int_even_odd(zahl));
+  printf("\n");
 
   int array[10] = {3, 1, 7, 4, 9, 1, 5, 10, -2, 2};
   for (int i = 0; i < 10; i++)
   {
     printf("Zahl %d: %d\n", i + 1, array[i]);
   }
+  printf("\n");
 
   int int_numbers[5];
   int summe_gerade = 0;
@@ -41,7 +44,7 @@ int main(int argc, char **argv)
     printf("%d. Zahl: ", i + 1);
     scanf("%d", &int_numbers[i]);
 
-    if (i % 2 == 0)
+    if (int_numbers[i] % 2 == 0)
     {
       summe_gerade = summe_gerade + 1;
     }
