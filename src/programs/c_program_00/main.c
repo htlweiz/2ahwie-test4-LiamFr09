@@ -8,11 +8,11 @@ int int_even_odd(int zahl)
   }
   else if (zahl % 2 == 0)
   {
-    return 2;                     // 2 ... gerade wurde übergeben
+    return 2;                     // 2 ... gerade Zahl wurde übergeben
   }
   else
   {
-    return 1;                     // 1 ... ungerade wurde übergeben
+    return 1;                     // 1 ... ungerade Zahl wurde übergeben
   }
 }
 
@@ -25,7 +25,7 @@ int main(int argc, char **argv)
   int zahl = 0;
   printf("Geben Sie eine ganze Zahl ein: ");
   scanf("%d", &zahl);
-  printf("Die Zahl %d ist: %d \n1 ... ungerade wurde übergeben \n2 ... gerade wurde übergeben \n0 ... die Zahl 0 wurde übergeben\n", zahl, int_even_odd(zahl));
+  printf("Die Zahl %d ist: %d \n1 ... ungerade Zahl wurde übergeben \n2 ... gerade Zahl wurde übergeben \n0 ... die Zahl 0 wurde übergeben\n", zahl, int_even_odd(zahl));
   printf("\n");
 
   int array[10] = {3, 1, 7, 4, 9, 1, 5, 10, -2, 2};
