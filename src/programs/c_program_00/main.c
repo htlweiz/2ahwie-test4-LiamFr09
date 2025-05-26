@@ -4,15 +4,15 @@ int int_even_odd(int zahl)
 {
   if (zahl == 0)
   {
-    return 0;
+    return 0;                     // 0 ... die Zahl 0 wurde übergeben
   }
   else if (zahl % 2 == 0)
   {
-    return 2;
+    return 2;                     // 2 ... gerade wurde übergeben
   }
   else
   {
-    return 1;
+    return 1;                     // 1 ... ungerade wurde übergeben
   }
 }
 
