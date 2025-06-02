@@ -53,9 +53,15 @@ int main(int argc, char **argv)
       summe_ungerade = summe_ungerade + 1;
     }
 
-    summe_alle = summe_alle + 1;
+    summe_alle = summe_alle + int_numbers[i];
   }
   printf("Anzahl der geraden Zahlen: %d\n", summe_gerade);
   printf("Anzahl der ungeraden Zahlen: %d\n", summe_ungerade);
   printf("Summe aller Zahlen: %d\n", summe_alle);
 }
+
+
+
+
+
+
