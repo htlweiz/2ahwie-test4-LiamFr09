@@ -85,7 +85,7 @@ int main(int argc, char **argv)
   for(int i = 0; i < 5; i++)
   {
     printf("%d. Zahl: ", i+1);
-    scanf("%d", num_arr[i]);
+    scanf("%d", &num_arr[i]);
   }
   for(int i = 0; i < 5; i++)
   {
@@ -97,10 +97,6 @@ int main(int argc, char **argv)
   printf("Anzahl der geraden Zahlen: %d\n", count_even);
   printf("Anzahl der ungeraden Zahlen: %d\n", count_odd);
   printf("Summe der Zahlen: %d\n", sum);
-
-  
-
-
 }
 
 
